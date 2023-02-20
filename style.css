@@ -1,0 +1,219 @@
+body{
+    margin: 0px;
+    margin-top: 3em;
+    padding: 0px;
+    background-image: url(./imagens/fundo/fundo.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+/* Início do CSS do Header do site*/
+
+header{
+    display: grid;
+    grid-template-columns: 43vw 34.5vw;
+}
+
+#perfil{
+    display: inline;
+    width: 15vw;
+    padding-left: 21vw;
+}
+
+#boas_vindas{
+    color: #ffffff;
+    font-size: 2.3vw;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+#boas_vindas span{
+    background-color: rgb(0, 255, 254);
+    color: black;
+    mix-blend-mode: screen;
+}
+
+#icones{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#icon1{
+    width: 4vw;
+    margin-left: 11vw;
+}
+
+#icon2{
+    width: 5.9vw;
+    margin-left: 2vw;
+}
+
+/* Início do CSS do botão no Header do site*/
+
+.button {
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.25em 4em;
+    border: none;
+    border-radius: 1em;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 1.5vw;
+    letter-spacing: 0.3em;
+    color: #fff;
+    transition: all 1000ms;
+    position: relative;
+    overflow: hidden;
+    outline: 0.1em solid #fff;
+    background-color: transparent;
+    display: block;
+}
+  
+button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 0.1em solid #71fffe;
+    box-shadow: 4px 5px 17px -4px #71fffe;
+    cursor: pointer;
+}
+  
+button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #71fffe;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+  
+button:hover::before {
+    width: 250%;
+}
+  
+
+a{
+    text-decoration: none;
+}
+
+
+/* Fim do CSS do botão no Header do site*/
+
+/* Fim do CSS do Header do site*/
+
+
+/* Início do CSS da Section 1 do site*/
+
+#sec1{
+    text-align: center;
+    margin-top: 2em;
+}
+
+#sec1 span{
+    background-color: rgb(255, 206, 0);
+    color: #00573f;
+    font-weight: 600;
+}
+
+#texto1{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 2.5vw;
+    color: #fff;
+}
+
+#texto2{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 2.5vw;
+    color: #fff;
+}
+
+/* Fim do CSS da Section 1 do site*/
+
+
+/* Início do CSS da Section 2 do site*/
+.produtos{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5em;
+    transition: all 300ms;
+}
+
+.produtos:hover{
+    transform: scale(0.85);
+}
+
+#espacamento{
+    margin-top: 3.5em;
+    margin-bottom: 0px;
+}
+
+/* Fim do CSS da Section 2 do site*/
+
+
+/* Início dos Footer do site*/
+footer{
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+footer h1{
+    font-size: 4em;
+    font-weight: 600;
+}
+
+footer p{
+    font-size: 1.5em;
+    margin-top: -1.5em;
+}
+
+/* Fim do Footer do site*/
+
+
+/* Início dos ajustes responsivos do site*/
+@media(max-width:500px){
+    body{
+        margin-top: 1.5em;
+    }
+    header{
+        grid-template-columns: 43vw 38vw;
+    }
+    #icon1{
+        margin-left: 13vw;
+    }
+    .button{
+        font-size: 2vw;
+    }
+    #boas_vindas{
+        text-align: center;
+    }
+    #sec1{
+        margin-top: 1em;
+    }
+    .produtos{
+        margin-bottom: 1.0em;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    #espacamento{
+        margin-top: 1.5em;
+    }
+    footer h1{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    footer p{
+        font-size: 0.6em;
+        margin-top: -1.5em;
+    }
+}
+/* Fim dos ajustes responsivos do site*/
