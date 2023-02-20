@@ -2,7 +2,7 @@ body{
     margin: 0px;
     margin-top: 3em;
     padding: 0px;
-    background-image: url(./imagens/fundo/fundo.jpg);
+    background-image: url(./imagens/fundo/fundo.png);
     background-size: 100vw;
     background-repeat: no-repeat;
 }
@@ -33,11 +33,6 @@ header{
     mix-blend-mode: screen;
 }
 
-#icones{
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #icon1{
     width: 4vw;
     margin-left: 11vw;
@@ -58,7 +53,7 @@ header{
     border: none;
     border-radius: 1em;
     font-family: "Montserrat";
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.5vw;
     letter-spacing: 0.3em;
     color: #fff;
@@ -71,7 +66,7 @@ header{
 }
   
 button:hover {
-    color: #ffffff;
+    color: #000000;
     transform: scale(1.1);
     outline: 0.1em solid #71fffe;
     box-shadow: 4px 5px 17px -4px #71fffe;
@@ -149,7 +144,7 @@ a{
     transform: scale(0.85);
 }
 
-#espacamento{
+.espacamento{
     margin-top: 3.5em;
     margin-bottom: 0px;
 }
@@ -184,16 +179,30 @@ footer p{
         margin-top: 1.5em;
     }
     header{
-        grid-template-columns: 43vw 38vw;
+        grid-template-columns: 40vw 41vw;
+    }
+  	#perfil{
+        width: 25vw;
+      	padding-left: 11vw;
+    }
+  	#div_infos{
+      	width: 13em;
+  	}
+  	#boas_vindas{
+        text-align: center;
+      	font-size: 3vw;
     }
     #icon1{
-        margin-left: 13vw;
+        margin-left: 10vw;
+      	width: 9vw;
+    }
+    #icon2{
+        width: 13.25vw;
+      	margin-left: 6vw
     }
     .button{
-        font-size: 2vw;
-    }
-    #boas_vindas{
-        text-align: center;
+        font-size: 2.8vw;
+      	padding: 0.45em 3.5em
     }
     #sec1{
         margin-top: 1em;
@@ -204,7 +213,7 @@ footer p{
         margin-left: 15%;
         margin-right: 15%;
     }
-    #espacamento{
+    .espacamento{
         margin-top: 1.5em;
     }
     footer h1{
@@ -215,5 +224,31 @@ footer p{
         font-size: 0.6em;
         margin-top: -1.5em;
     }
+}
+
+@media(min-width: 501px) and (max-width:1000px){
+    .produtos{
+        margin-bottom: 0.7em;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .espacamento{
+        margin-top: 1.5em;
+    }
+    footer h1{
+        font-size: 3em;
+        font-weight: 600;
+    }
+    footer p{
+        font-size: 1.3em;
+        margin-top: -1.5em;
+    }
+}
+
+@media(min-width: 1001px){
+    #espacamento_web{
+		margin-top: 8em;
+	}
 }
 /* Fim dos ajustes responsivos do site*/
